@@ -1,0 +1,218 @@
+@prefix cdwa: <http://cdwa.org/metadata/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# 文物实体（使用CDWA标准）
+ex:EagleCrestGoldCrown
+  a cdwa:Work ;
+  cdwa:title "鹰顶金冠饰" ;
+  cdwa:createdDate "战国时期" ;
+  cdwa:repository "内蒙古博物院" .
+
+ex:WarringStatesBattleCopperPot
+  a cdwa:Work ;
+  cdwa:title "战国错嵌宴乐攻战铜壶" ;
+  cdwa:createdDate "战国" ;
+  cdwa:repository "故宫博物院" .
+
+ex:ZengHouYiBellChime
+  a cdwa:Work ;
+  cdwa:title "曾侯乙编钟" ;
+  cdwa:createdDate "战国" ;
+  cdwa:repository "湖北省博物馆" .
+
+ex:PersonYuLongBoHua
+  a cdwa:Work ;
+  cdwa:title "人物御龙帛画" ;
+  cdwa:createdDate "秦" ;
+  cdwa:repository "湖南博物院" .
+
+ex:KneelingArcherTerracotta
+  a cdwa:Work ;
+  cdwa:title "跪射俑" ;
+  cdwa:createdDate "秦" ;
+  cdwa:repository "秦始皇陵博物院" .
+
+ex:WarringStatesShangYangSquareLadle
+  a cdwa:Work ;
+  cdwa:title "战国商鞅方升" ;
+  cdwa:createdDate "战国" ;
+  cdwa:repository "上海博物馆" .
+
+ex:QinShiHuangBronzeChariot
+  a cdwa:Work ;
+  cdwa:title "秦始皇陵铜车马" ;
+  cdwa:createdDate "秦" ;
+  cdwa:repository "秦始皇陵博物院" .
+
+ex:LiYeQinSlip
+  a cdwa:Work ;
+  cdwa:title "里耶秦简" ;
+  cdwa:createdDate "秦" ;
+  cdwa:repository "里耶秦简博物馆" .
+
+ex:NanYueHanJade
+  a cdwa:Work ;
+  cdwa:title "南越汉玉" ;
+  cdwa:createdDate "汉" ;
+  cdwa:repository "广州南越王博物院" .
+
+ex:FiveStarsOrientalJinHuBu
+  a cdwa:Work ;
+  cdwa:title "五星出东方锦护臂" ;
+  cdwa:createdDate "汉" ;
+  cdwa:repository "新疆博物馆" .
+
+# 视频信息实体（使用DC标准）
+ex:Video_EagleCrest
+  a dc:Work ;
+  dc:title "鹰顶金冠饰：你好 我的对手" ;
+  dc:identifier "EC001" ; # 视频ID
+  dc:subject ex:EagleCrest ; # 视频中涉及到的文物
+  dc:source "第二季第一集" ; # 季数和集数
+  dc:format "0:04:59" ; # 时长
+
+ex:Video_ZhanGuoBattleCopperPot
+  a dc:Work ;
+  dc:title "战国错嵌宴乐攻战铜壶：战国春秋" ;
+  dc:identifier "ZGCP001" ;
+  dc:relation "第二季 第二集" ;
+  dc:format "Duration: 0:04:59" ;
+  dc:subject ex:WarringStatesBattleCopperPot .
+
+ex:Video_ZengHouYiBell
+  a dc:Work ;
+  dc:title "曾侯乙编钟：中国之声" ;
+  dc:identifier "ZHYB001" ;
+  dc:relation "第二季 第三集" ;
+  dc:format "Duration: 0:04:59" ;
+  dc:subject ex:ZengHouYiBellChime .
+
+ex:Video_PersonYuLongBoHua
+  a dc:Work ;
+  dc:title "人物御龙帛画：天上见" ;
+  dc:identifier "PYLBH001" ;
+  dc:relation "第二季 第五集" ;
+  dc:format "Duration: 0:04:58" ;
+  dc:subject ex:PersonYuLongBoHua .
+
+ex:Video_KneelingArcher
+  a dc:Work ;
+  dc:title "跪射俑：帝国的镜像" ;
+  dc:identifier "KA001" ;
+  dc:relation "第二季 第六集" ;
+  dc:format "Duration: 0:04:58" ;
+  dc:subject ex:KneelingArcher .
+
+ex:Video_WarringStatesShangYangSquareLadle
+  a dc:Work ;
+  dc:title "战国商鞅方升：一升量天下" ;
+  dc:identifier "WSSL001" ;
+  dc:relation "第二季 第七集" ;
+  dc:format "Duration: 0:04:59" ;
+  dc:subject ex:WarringStatesShangYangSquareLadle .
+
+ex:Video_QinShiHuangBronzeChariot
+  a dc:Work ;
+  dc:title "秦始皇陵铜车马：图谋远方" ;
+  dc:identifier "QSHBC001" ;
+  dc:relation "第二季 第八集" ;
+  dc:format "Duration: 0:04:59" ;
+  dc:subject ex:QinShiHuangBronzeChariot .
+
+ex:Video_LiYeQinSlip
+  a dc:Work ;
+  dc:title "里耶秦简：秦朝县城那些事儿" ;
+  dc:identifier "LYQS001" ;
+  dc:relation "第二季 第九集" ;
+  dc:format "Duration: 0:04:59" ;
+  dc:subject ex:LiYeQinSlip .
+
+ex:Video_NanYueHanJade
+  a dc:Work ;
+  dc:title "南越汉玉：有玉而安" ;
+  dc:identifier "NYHJ001" ;
+  dc:relation "第二季 第十集" ;
+  dc:format "Duration: 0:04:58" ;
+  dc:subject ex:NanYueHanJade .
+
+ex:Video_FiveStarsOrientalJinHuBu
+  a dc:Work ;
+  dc:title "五星出东方织锦：五星出东方利中国" ;
+  dc:identifier "FSOJHB001" ;
+  dc:relation "第二季 第十二集" ;
+  dc:format "Duration: 0:04:58" ;
+  dc:subject ex:FiveStarsOrientalJinHuBu .
+
+
+# 用户实体
+ex:User_1001
+  a foaf:Person ;
+  foaf:name "小红" ;
+  dc:identifier "1001" .
+
+ex:User_1002
+  a foaf:Person ;
+  foaf:name "小明" ;
+  dc:identifier "1002" .
+
+# 管理员实体
+ex:Admin_001
+  a foaf:Person ;
+  foaf:name "管理员001" ;
+  dc:identifier "001" .
+
+#关联实体定义
+ex:Association_EagleCrestGoldCrown
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:EagleCrestGoldCrown ; # 假设文物实体URI
+  cdwa:relatedVideo ex:Video_EagleCrestGoldCrown .
+
+ex:Association_WarringStatesBattleCopperPot
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:WarringStatesBattleCopperPot ; 
+  cdwa:relatedVideo ex:Video_WarringStatesBattleCopperPot .
+
+ex:Association_ZengHouYiBellChime
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:ZengHouYiBellChime ; 
+  cdwa:relatedVideo ex:Video_ZengHouYiBellChime .
+
+ex:Association_PersonYuLongBoHua
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:PersonYuLongBoHua ;
+  cdwa:relatedVideo ex:Video_PersonYuLongBoHua .
+
+ex:Association_KneelingArcher
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:KneelingArcher ; 
+  cdwa:relatedVideo ex:Video_KneelingArcher .
+
+ex:Association_WarringStatesShangYangSquareLadle
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:WarringStatesShangYangSquareLadle ; 
+  cdwa:relatedVideo ex:Video_WarringStatesShangYangSquareLadle .
+
+ex:Association_QinShiHuangBronzeChariot
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:QinShiHuangBronzeChariot ; 
+  cdwa:relatedVideo ex:Video_QinShiHuangBronzeChariot .
+
+ex:Association_LiYeQinSlip
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:LiYeQinSlip ; 
+  cdwa:relatedVideo ex:Video_LiYeQinSlip .
+
+ex:Association_NanYueHanJade
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:NanYueHanJade ; 
+  cdwa:relatedVideo ex:Video_NanYueHanJade .
+
+ex:Association_FiveStarsOrientalJinHuBu
+  a cdwa:Association ;
+  cdwa:culturalHeritage ex:FiveStarsOrientalJinHuBu ; 
+  cdwa:relatedVideo ex:Video_FiveStarsOrientalJinHuBu .
+
+
+
