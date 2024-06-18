@@ -1,0 +1,156 @@
+@prefix cdwa: <http://cdwa.org/metadata/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/entities/> .
+
+# 文物实体
+ex:CulturalRelic_EagleTopGoldCrown  a cdwa:Object ;
+  cdwa:Titles "鹰顶金冠饰" ;
+  cdwa:CurrentLocation "内蒙古博物院" ;
+  cdwa:Creation "战国" .
+
+ex:CulturalRelic_WarringStatesBronzePot  a cdwa:Object ;
+  cdwa:Titles "战国错嵌宴乐攻战铜壶" ;
+  cdwa:CurrentLocation "故宫博物院" ;
+  cdwa:Creation "战国" .
+
+ex:CulturalRelic_ZengHouYiBell  a cdwa:Object ;
+  cdwa:Titles "曾侯乙编钟" ;
+  cdwa:CurrentLocation "湖北省博物馆" ;
+  cdwa:Creation "战国" .
+
+ex:CulturalRelic_PersonRidingDragonSilk  a cdwa:Object ;
+  cdwa:Titles "人物御龙帛画" ;
+  cdwa:CurrentLocation "湖南博物院" ;
+  cdwa:Creation "秦" .
+
+ex:CulturalRelic_KneelingArcher  a cdwa:Object ;
+  cdwa:Titles "跪射俑" ;
+  cdwa:CurrentLocation "秦始皇陵博物院" ;
+  cdwa:Creation "秦" .
+
+ex:CulturalRelic_WarringStatesShangYangSquareRiser  a cdwa:Object ;
+  cdwa:Titles "战国商鞅方升" ;
+  cdwa:CurrentLocation "上海博物馆" ;
+  cdwa:Creation "战国" .
+
+ex:CulturalRelic_QinShiHuangBronzeChariot  a cdwa:Object ;
+  cdwa:Titles "秦始皇陵铜车马" ;
+  cdwa:CurrentLocation "秦始皇陵博物院" ;
+  cdwa:Creation "秦" .
+
+ex:CulturalRelic_LiYeQinSimplicities  a cdwa:Object ;
+  cdwa:Titles "里耶秦简" ;
+  cdwa:CurrentLocation "里耶秦简博物馆" ;
+  cdwa:Creation "秦" .
+
+ex:CulturalRelic_NanYueHanJade  a cdwa:Object ;
+  cdwa:Titles "南越汉玉" ;
+  cdwa:CurrentLocation "广州南越王博物院" ;
+  cdwa:Creation "汉" .
+
+ex:CulturalRelic_FiveStarsOrientalJin  a cdwa:Object ;
+  cdwa:Titles "五星出东方锦护臂" ;
+  cdwa:CurrentLocation "新疆博物馆" ;
+  cdwa:Creation "汉" .
+
+# 视频实体
+ex:Video_EagleTopGoldCrown  a dc:Video ;
+  dc:Identifier "鹰顶金冠饰：你好我的对手" ;
+  dc:Coverage "第二季第一集" ;
+  dc:Titles "鹰顶金冠饰：你好我的对手" ;
+  dc:Extent "0:04:59" .
+
+ex:Video_WarringStatesBronzePot  a dc:Video ;
+  dc:Identifier "战国嵌错宴乐攻战纹铜壶：战国春秋" ;
+  dc:Coverage "第二季第二集" ;
+  dc:Titles "战国嵌错宴乐攻战纹铜壶：战国春秋" ;
+  dc:Extent "0:04:59" .
+
+ex:Video_ZengHouYiBell  a dc:Video ;
+  dc:Identifier "曾侯乙编钟：中国之声" ;
+  dc:Coverage "第二季第三集" ;
+  dc:Titles "曾侯乙编钟：中国之声" ;
+  dc:Extent "0:05:00" .
+
+ex:Video_PersonRidingDragonSilk  a dc:Video ;
+  dc:Identifier "人物御龙帛画：天上见" ;
+  dc:Coverage "第二季第五集" ;
+  dc:Titles "人物御龙帛画：天上见" ;
+  dc:Extent "0:04:58" .
+
+ex:Video_KneelingArcher  a dc:Video ;
+  dc:Identifier "跪射俑：帝国的镜像" ;
+  dc:Coverage "第二季第六集" ;
+  dc:Titles "跪射俑：帝国的镜像" ;
+  dc:Extent "0:04:58" .
+
+ex:Video_WarringStatesShangYangSquareRiser  a dc:Video ;
+  dc:Identifier "战国商鞅方升：一升量天下" ;
+  dc:Coverage "第二季第七集" ;
+  dc:Titles "战国商鞅方升：一升量天下" ;
+  dc:Extent "0:04:59" .
+
+ex:Video_QinShiHuangBronzeChariot  a dc:Video ;
+  dc:Identifier "秦始皇陵铜车马：图谋远方" ;
+  dc:Coverage "第二季第八集" ;
+  dc:Titles "秦始皇陵铜车马：图谋远方" ;
+  dc:Extent "0:04:59" .
+
+ex:Video_LiYeQinSimplicities  a dc:Video ;
+  dc:Identifier "里耶秦简：秦朝县城那些事儿" ;
+  dc:Coverage "第二季第九集" ;
+  dc:Titles "里耶秦简：秦朝县城那些事儿" ;
+  dc:Extent "0:04:59" .
+
+ex:Video_NanYueHanJade  a dc:Video ;
+  dc:Identifier "南越汉玉：有玉而安" ;
+  dc:Coverage "第二季第十集" ;
+  dc:Titles "南越汉玉：有玉而安" ;
+  dc:Extent "0:04:58" .
+
+ex:Video_FiveStarsOrientalJin  a dc:Video ;
+  dc:Identifier "五星出东方织锦：五星出东方利中国" ;
+  dc:Coverage "第二季第十二集" ;
+  dc:Titles "五星出东方织锦：五星出东方利中国" ;
+  dc:Extent "0:04:58" .
+
+# 实例化关联实体
+ex:Association_EagleTopGoldCrown_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_EagleTopGoldCrown ;
+  ex:video ex:Video_EagleTopGoldCrown .
+
+ex:Association_WarringStatesBronzePot_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_WarringStatesBronzePot ;
+  ex:video ex:Video_WarringStatesBronzePot .
+
+ex:Association_ZengHouYiBell_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_ZengHouYiBell ;
+  ex:video ex:Video_ZengHouYiBell .
+
+ex:Association_PersonRidingDragonSilk_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_PersonRidingDragonSilk ;
+  ex:video ex:Video_PersonRidingDragonSilk .
+
+ex:Association_KneelingArcher_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_KneelingArcher ;
+  ex:video ex:Video_KneelingArcher .
+
+ex:Association_WarringStatesShangYangSquareRiser_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_WarringStatesShangYangSquareRiser ;
+  ex:video ex:Video_WarringStatesShangYangSquareRiser .
+
+ex:Association_QinShiHuangBronzeChariot_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_QinShiHuangBronzeChariot ;
+  ex:video ex:Video_QinShiHuangBronzeChariot .
+
+ex:Association_LiYeQinSimplicities_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_LiYeQinSimplicities ;
+  ex:video ex:Video_LiYeQinSimplicities .
+
+ex:Association_NanYueHanJade_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_NanYueHanJade ;
+  ex:video ex:Video_NanYueHanJade .
+
+ex:Association_FiveStarsOrientalJin_Video  a ex:Association ;
+  ex:culturalRelic ex:CulturalRelic_FiveStarsOrientalJin ;
+  ex:video ex:Video_FiveStarsOrientalJin .
